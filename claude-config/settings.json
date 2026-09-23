@@ -1,0 +1,19 @@
+{
+  "autoUpdatesChannel": "latest",
+  "theme": "dark-ansi",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$HOME/.claude/hooks/backup-file.py\"",
+            "timeout": 10,
+            "statusMessage": "Backing up file"
+          }
+        ]
+      }
+    ]
+  }
+}

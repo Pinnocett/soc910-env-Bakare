@@ -1,0 +1,17 @@
+# Never commit these — they live in the same directory as this config
+.credentials.json
+history.jsonl
+projects/
+sessions/
+session-env/
+shell-snapshots/
+telemetry/
+file-history/
+backups/
+cache/
+downloads/
+ide/
+plugins/
+skills/synced/
+settings.local.json
+*.local.json
